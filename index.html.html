@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Entrega 3</title>
+    <title>Landing Page - Entrega 4</title>
+    <link rel="stylesheet" href="./assets - entrega 2/mediaqueries.css">
+    <link rel="stylesheet" href="./assets - entrega 2/animaciones-entrega.css">
     <link rel="stylesheet" href="./assets - entrega 2/styles-entrega2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
         <img src="./assets - entrega 2/ALEJANDRA-ORELLANA.png" alt="logo" class="logo">   
-        
-        <nav class="navbar">  
-          <ul class="navbar-list">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>  
-        
-        </nav>
+      
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <!-- Menu hamburguesa  -->
+      
+      <label for="menu-toggle" class="menu-label">
+        <img src="./assets - entrega 2/menu.png" alt="menu icon">
+      </label>
+      <input type="checkbox" id="menu-toggle">
+      <!-- navbar-list -->
+      <ul class="navbar-list">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#sobre mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contactanos</a></li>
+      </ul>     
+
         </header>  
         
 <!-- Hero -->
@@ -26,7 +37,8 @@
 
   <div class="container">
       <div class="izquierda">
-        <h1>Le damos vida a tus <span>ideas</span></h1>
+        <!--<img src="./assets - entrega 2/ALEJANDRA ORELLANA Diseñadora gráfica.png" class="logo-fucsia" alt="logo">-->
+        <h1>Diseñamos <span>ideas</span></h1>
         <p>Damos la mejor solución de diseño gráfico y editorial, para dar vida a tu marca.</p>
                 
                 <div class="botones">
@@ -37,7 +49,7 @@
       </div>    
 
     <div class="derecha">
-        <img src="./assets - entrega 2/fandemi mock up redes.jpg" class="imagen-derecha">
+        <img src="./assets - entrega 2/7450332.jpg" class="imagen-derecha">
       </div>
 </div>
 
@@ -52,6 +64,90 @@
   </div>
 </section>
 
+<!--SECCION BENEFICIOS-->
+
+<section class="beneficios">
+  <div class="intro">
+    <h1>Diseño Gráfico que <span class="intro-span">Comunica y Conecta</span></h1>
+    <p>Más que diseño, creamos experiencias visuales que reflejan la esencia de tu marca. 
+      <br>Nuestros servicios están diseñados para comunicar tus valores y conectar con tu público objetivo.</p>
+  </div>
+
+  <div class="benefits">
+    <!--beneficio 1-->
+    <div class="benefit">
+      <i class="fa-regular fa-eye"></i>
+      <h3>Identidad Visual Consistente y Profesional</h3>
+      <p>Lográ que la identidad visual de tu marca sea coherente desde su logotipo hasta sus materiales de marketing. Esto te permitirá destacar en un mercado competitivo y ser fácilmente reconocidos por tu audiencia.</p>
+    </div>
+
+    <!--beneficio 2-->
+    <div class="benefit">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Aumento de conversión</h3>
+      <p>Con un diseño gráfico atractivo y estratégico, tus clientes podrán captar la atención de su público objetivo y mantener su interés, lo que se traduce en un mayor compromiso y tasas de conversión más altas en sus campañas y plataformas digitales.</p>
+    </div>
+
+    <!--beneficio 3-->
+    <div class="benefit">
+      <i class="fa-solid fa-bullhorn"></i>
+      <h3>Comunicación Clara y Efectiva</h3>
+      <p>Un buen diseño gráfico facilita la comprensión y retención de la información, lo que mejora la efectividad de su comunicación y la respuesta del público.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!--SECCION CONTACTO-->
+
+<section class="Contact">
+  <div class="contact-container">
+    <!--container izquierda-->
+  <div class="contact-izquierda">
+    <h2 class="contact-izquierda__title">Contacto</h2>
+    <h3>CABA</h3>
+
+    <div class="contact-datos">
+    <i class="fa-solid fa-location-dot"></i>
+    <p>Moreno 1606, 4°A</p>
+  </div>
+  <div class="contact-datos">
+    <i class="fa-solid fa-at"></i>
+    <p>alejandraorellana1@hotmail.com</p>
+  </div>  
+  <div class="contact-datos">
+    <i class="fa-solid fa-phone"></i>
+    <p>54 9 11-50962215</p>
+    </div>
+
+    <div class="contact-socialmedia">
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-square-facebook"></i>
+
+    </div>
+
+  </div>
+
+<!--container derecha-->
+<div class="contact-derecha">
+  <img src="./assets - entrega 2/contacto.jpg" class="contact-imagen" alt="imagen de contacto">
+</div>
+  </div>
+</section>
 </main>    
+
+<!--FOOTER-->
+<footer>
+  <div class="footer-copyright">
+    <img src="./assets - entrega 2/ALEJANDRA ORELLANA Diseñadora gráfica - copia.png" class="icono-ao" alt="isotipo">
+  </div>
+  <div class="footer-copyright">
+  <p>Copyright <span>© Alejandra Orellana 2024</span></p>
+  </div>
+  
+</footer>
+
 </body>
 </html>

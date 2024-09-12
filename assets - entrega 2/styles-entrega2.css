@@ -35,8 +35,7 @@ p{
 
 header{
     
-    /*background-color: #fd0592;*/
-    background: linear-gradient(to bottom, #fd0592, var(--background-dark) );
+    background: linear-gradient(to bottom, #fd0592, var(--btn-bg));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,20 +45,17 @@ header{
     width: 100%;   
 }
 
-.navbar, 
-.navbar-list{
+/* Estilos básicos del navbar */
 
+.navbar,
+.navbar-list{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .navbar{
-    
-    gap: 150px;
-    display: flex;
-    list-style: none;
+    gap: 150px; 
 }
 
 .navbar-list{
@@ -67,19 +63,33 @@ header{
 }
 
 .navbar-list a{
-
-    color: var(--text-white);
-    font-size: 15px;
+    color: var(--background);
+    font-size: 14px;
+    font-weight: 400;
 }
+
 
 .navbar-list .active{
     font-weight: 600;
-    color: var(--active);
+    color: var(--text-white);
 }
 
-.logo{
-height: 65%;
+.menu-label img{
+  display: none;
 }
+
+#menu-toggle{
+  display: none;
+}
+  
+
+
+.logo{
+    height: 60%;
+}
+
+
+
 
 main{
     background-color: var(--background);
@@ -93,9 +103,7 @@ main{
 
 .container{
     display: flex;
-    max-width: 800px;
-    background-color: #fff;
-    padding: 30px;
+    max-width: 1000px;    
     margin-top: 10vw;
     border-radius: 1rem;
 }
@@ -104,19 +112,27 @@ main{
 
     flex: 1;
     display: flex;
+    text-align: start;
     flex-direction: column;
     justify-content: center;
-    margin-right: 20px;
-
+    
 }
 
-.izquierda h1{
-    display: flex;
-    flex-direction: column;
-    font-size: 2rem;
-    color: var(--text-grey);
-
+.izquierda h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: start;
+  justify-content: start;
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(to top, #fd0592, #2910A4);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 2px 2px 4px rgba(71, 2, 54, 0.3);
 }
+
 
 .izquierda p{
     
@@ -125,12 +141,13 @@ main{
     margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     text-align: start;
+    padding: 20px;
 }
 
 .izquierda span{
-    font-size: 2rem;
+    font-size: 4rem;
     font-style: oblique;
     color: var(--primary);
 }
@@ -138,6 +155,8 @@ main{
 .botones{
     display: flex;
     gap: 10px;
+    border-radius: 2rem;
+    padding: 20px;
 }
 
 .derecha{
@@ -151,16 +170,17 @@ main{
 
 .imagen-derecha{
     display: flex;
+    flex: 1;
     width: 100%;
     border-radius: 10px;
 }
 
 .presupuesto{
-    background-color: var(--primary);
+    background: linear-gradient(to top, #fd0592, #2910A4);
     color: #ffffff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 15px;
 }
@@ -169,7 +189,7 @@ main{
     color: var(--primary);
     padding: 10px 20px;
     border: 1px solid var(--primary);
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 15px;
 }
@@ -181,7 +201,7 @@ main{
 /*-- SECCION 2 - INFO --*/
 
 #info{
-    
+     
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -194,3 +214,161 @@ main{
     color: var(--primary);
 }
 
+/* SECCION BENEFICIOS  */
+
+.intro{
+  
+    background-color: #f0fbff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;  
+    box-shadow: 2px 2px 4px rgba(71, 2, 54, 0.3);
+  }
+
+.intro-span{
+    font-weight: 600;
+    font-style: italic;
+    color: var(--primary);
+}
+
+
+  h1{
+    font-weight: 800;
+    font-size: 1,5rem;
+    background: linear-gradient(to top, #fd0592, #2910A4);
+    color: transparent;
+    background-clip: text;
+   -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(71, 2, 54, 0.3);
+    padding: 20px;  
+
+  }
+  
+  .beneficios{
+
+    padding: 30px;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  
+  .benefits{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: nowrap;
+    width: calc(3);
+    gap: 30px;
+  }
+  
+  .benefit{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .benefit p{
+   font-size: 14px; 
+   text-align: center;
+  }
+
+  h3{
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .benefit i {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: var(--primary);
+  }
+
+  /*  CONTACTO  */
+
+  .contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: start;
+    width: 850px;
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .contact-izquierda{
+    gap: 30px;
+  }
+
+  .contact-izquierda h2{
+    color: var(--primary);
+    margin-bottom: 20%;
+  }
+
+  .contact-izquierda h3{
+    font-size: 1rem;
+  }
+
+.contact-datos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+
+  .contact-derecha{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact-imagen{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    border-radius: 1rem;
+  }
+
+  .contact-socialmedia{
+    color: var(--primary);
+    display: flex;
+    justify-content: start;
+    margin-top: 20%;
+    gap: 20px;
+
+  }
+
+footer{
+    background-color: var(--background);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+footer p{
+    font-size: 14px;
+    color: var(--text-grey);
+    gap: 20px;
+}
+
+footer span{
+    font-weight: 600;
+}
+
+footer .icono-ao{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 25px;
+    margin: 28%;    
+}

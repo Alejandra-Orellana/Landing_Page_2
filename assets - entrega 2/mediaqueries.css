@@ -1,0 +1,138 @@
+
+@media (max-width: 992px) {
+  .navbar {
+    gap: 10px;
+  }
+ 
+  .navbar-list {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    align-items: start;
+    background: var(--nav-bg);
+    border: 2px solid var(--electric);
+    border-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+  }
+
+  .navbar-list a {
+    font-size: 18px;
+  }
+
+  .menu-label {
+    display: flex;
+    cursor: pointer;
+    order: 2;
+  }
+
+  .menu-label img {
+    display: flex;
+    height: 20px;
+    width: 25px;
+  }
+
+  #menu-toggle:checked + .navbar-list{
+    display: flex;
+  }
+
+
+/*  HERO */
+
+.container{  
+  flex-direction: column;
+  text-align: center;
+  justify-content: center; 
+  align-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 800px;
+  
+}
+
+.izquierda{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-items: center;
+  margin-top: 80px;
+  width: 500px;
+
+}
+
+.izquierda h1{
+  width: 90%;
+  max-width: 500px;
+  min-width: unset;
+  
+}
+
+.izquierda span{
+  width: 90%;
+  max-width: 500px;
+  min-width: unset;
+}
+
+.izquierda p{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.derecha{
+  display: none;
+}
+
+.derecha img{
+  display: none;
+}
+
+.botones{
+  justify-content: center;
+  align-items: center;
+}
+
+#info h1{
+  text-align: start;
+  flex-wrap: nowrap;
+}
+
+#info p{
+  width: 500px;
+
+}
+.intro p{
+  width: 500px;
+  flex-wrap: nowrap;
+}
+
+.contact-container{
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-izquierda h2{
+  text-align: center;
+}
+
+.contact-datos{
+  margin-left: 30%;
+}
+
+.contact-derecha{
+  display: none;
+}
+
+.contact-imagen{
+  display: none;
+}
+
+}
+
+
